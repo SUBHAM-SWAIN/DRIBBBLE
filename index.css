@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+}
+
+span {
+  color: blue;
+  font-weight: 200;
+}
+.loginpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginpage #imagesection {
+  width: 35%;
+  height: 100%;
+  background-color: rgb(242, 209, 132);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginpage #imagesection .uppertext {
+  width: 100%;
+  height: 30%;
+}
+.loginpage #imagesection .uppertext h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 70px 0 30px 70px;
+  color: rgb(166, 129, 56);
+  font-family: pacifico;
+}
+.loginpage #imagesection .uppertext p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-left: 70px;
+  padding-right: 90px;
+  color: rgb(134, 96, 21);
+}
+.loginpage #imagesection .img {
+  width: 100%;
+  height: 60%;
+  background-image: url("image.png");
+  background-size: cover;
+}
+.loginpage #imagesection .lowertext {
+  width: 100%;
+  flex: 1;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(166, 129, 56);
+}
+.loginpage #imagesection .lowertext p {
+  padding: 20px 0 0 70px;
+}
+#creater {
+  color: rgb(166, 129, 56);
+  font-weight: 500;
+}
+.loginpage #imagesection .lowertext p span {
+  text-decoration: underline;
+}
+#loginsection {
+  flex: 1;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginsection #signinbtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#loginsection .loginform {
+  height: 82%;
+  width: 50%;
+}
+#loginsection .loginform #heading {
+  font-size: 25px;
+  font-weight: bolder;
+}
+#loginsection .loginform .alert {
+  margin-top: 20px;
+  font-size: 15px;
+  color: red;
+}
+#loginsection .loginform .hide {
+  visibility: hidden;
+}
+
+#loginsection .loginform #names {
+  display: flex;
+  margin-top: 50px;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#loginsection .loginform .form-group h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+#loginsection .loginform .form-group .alerticon {
+  color: rgb(238, 99, 99);
+  margin-right: 5px;
+}
+#loginsection .loginform .form-group .hideicon {
+  display: none;
+}
+#loginsection .loginform .form-group input {
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(246, 246, 246);
+  width: 230px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+#loginsection .loginform .form-group .wrong {
+  background-color: rgb(249, 209, 208);
+  color: rgb(240, 119, 119);
+}
+
+#loginsection .loginform .group2 {
+  margin-top: 50px;
+}
+#loginsection .loginform .group2 input {
+  width: 98%;
+}
+#chakebox {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+}
+#chakebox #box {
+  height: 45px;
+  width: 45px;
+  margin-right: 15px;
+}
+
+#chakebox p {
+  color: rgb(181, 181, 181);
+  padding-top: 8px;
+}
+button {
+  height: 50px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  background-color: rgb(234, 75, 139);
+  border-radius: 6px;
+  margin-top: 35px;
+}
+.captcha-info {
+  color: rgb(181, 181, 181);
+
+  font-size: 15px;
+  margin-top: 25px;
+}
+.sub-captcha {
+  color: rgb(181, 181, 181);
+  font-size: 15px;
+}
+@media(max-width:450px){
+  .loginpage {
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .loginpage #imagesection{
+       width: 100%;
+       height: 45%;
+       border-radius: 0 0 25% 0 ;
+       background-size: cover;
+
+  }.loginpage #imagesection .uppertext h1 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 50px 0 20px 50px;
+    color: rgb(166, 129, 56);
+    font-family: pacifico;
+  }
+  .loginpage #imagesection .uppertext p {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: rgb(134, 96, 21);
+  }.loginpage #imagesection .img {
+
+    height: 55%;
+  }
+  #loginsection {
+    flex: 1;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }#loginsection #signinbtn {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+  }
+  #loginsection .loginform {
+    height: 90%;
+    width: 80%;
+  }
+  #loginsection .loginform #heading{
+    font-size: 25px;
+    margin-top: 5px;
+
+  }#loginsection .loginform #names {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  height:max-content;
+  width: 100%;
+  gap: 15px;
+  justify-content: space-between;
+}
+#loginsection .loginform .form-group input {
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(246, 246, 246);
+  width: 80%;
+  padding: 2px 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}#loginsection .loginform .group2 {
+  margin-top: 15px;
+}#chakebox p {
+  font-size: 13px;
+}
+button {
+  height: 40px;
+  width: 70%;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 30px;
+}
+.captcha-info {
+
+  font-size: 13px;
+  margin-top: 20px;
+}
+.sub-captcha {
+  font-size: 13px;
+}
+
+
+
+
+}

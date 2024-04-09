@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+  border: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  font-weight: 200;
+
+  font-family: pacifico;
+  color: rgb(234, 75, 139);
+}
+#content {
+  height: 90%;
+  width: 65%;
+  text-align: center;
+}
+#content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+  color: black;
+}
+#content p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: rgb(150, 150, 150);
+}
+#content #container {
+  width: 100%;
+  height: 40%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content #container .options {
+  height: 100%;
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 12px;
+}
+#content #container .selected {
+  border: 3px solid rgb(234, 75, 139);
+  border-radius: 12px;
+}
+#content #container .options .image {
+  width: 100%;
+  height: 65%;
+  border-radius: 12px 12px 0 0;
+}
+#image1 {
+  background-image: url("image\ copy.png");
+  background-size: cover;
+}
+#image2 {
+  background-image: url("image\ copy\ 2.png");
+  background-size: cover;
+}
+#image3 {
+  background-image: url("image\ copy\ 4.png");
+  background-size: cover;
+}
+#content #container .options h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#content #container .options .box {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  border: 1px solid rgb(181, 181, 181);
+  margin-top: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content #container .options .checked {
+  background-color: rgb(234, 75, 139);
+}
+
+#content button {
+  height: 35px;
+  width: 200px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 80px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(234, 75, 139);
+}
+@media(max-width:450px){
+  body {
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: 200;
+  
+    font-family: pacifico;
+    color: rgb(234, 75, 139);
+  }
+  #content {
+    height: 90%;
+    width: 90%;
+    text-align: center;
+  }
+  #content h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 70px;
+    color: black;
+  }
+  #content p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: rgb(150, 150, 150);
+  }
+  #content #container {
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+  }
+  #content #container .options {
+    height: 31%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 12px;
+  }
+  #content #container .selected {
+    border: 3px solid rgb(234, 75, 139);
+    border-radius: 12px;
+  }
+  #content #container .options h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #content button {
+    height: 35px;
+    width: 80%;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 7px;
+  }
+
+}

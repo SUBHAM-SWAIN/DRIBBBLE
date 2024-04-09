@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="loginpage">
+      <div id="imagesection">
+        <div class="uppertext">
+          <h1>dribbble</h1>
+          <p>Discover the world's top Designer & Creatives.</p>
+        </div>
+        <div class="img"></div>
+        <div class="lowertext">
+          <p>Art by <span id="creater">Peter Tarak</span></p>
+        </div>
+      </div>
+      <div id="loginsection">
+        <p id="signinbtn">Already a member?<a href="#heading">Sign In</a></p>
+        <div class="loginform">
+          <p id="heading">Sign up to Dribble</p>
+          <li class="hide">username has already been taken</li>
+          <div id="names">
+            <div class="form-group">
+              <h2>Name</h2>
+              <input type="text" id="name" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <h2>
+                <span class="hideicon" id="alerticon"
+                  ><i class="fa-solid fa-triangle-exclamation"></i></span
+                >Username
+              </h2>
+              <input
+                class="username"
+                type="text"
+                id="username"
+                placeholder="John"
+              />
+            </div>
+          </div>
+
+          <div class="form-group group2">
+            <h2>Email</h2>
+            <input
+              type="email"
+              id="email"
+              placeholder="subhamswain@gmail.com"
+            />
+          </div>
+          <div class="form-group group2">
+            <h2>Password</h2>
+            <input
+              type="password"
+              id="password"
+              accept="alphabet"
+              placeholder="6+ characters"
+            />
+          </div>
+          <div id="chakebox">
+            <input type="checkbox" id="box" />
+            <div>
+              <p id="terms">
+                Creating an account means you're okay with our
+                <span>Terms of Service, Privacy Policy</span>, and our default
+                <span>Notification Settings.</span>
+              </p>
+            </div>
+          </div>
+          <button id="create-account-btn">Create Account</button>
+          <p class="captcha-info">
+            This site is protected by reCAPTCHA and the Google
+          </p>
+          <p class="sub-captcha">
+            <span>Privacy Policy</span> and <span>Terms of Service</span> apply.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
